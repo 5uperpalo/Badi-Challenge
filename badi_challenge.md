@@ -116,13 +116,6 @@ requests_grp_pd['demand'] = requests_grp_pd['lister'] + requests_grp_pd['seeker'
 requests_grp_pd.rename(columns={'lister': 'demand_lister', 'seeker': 'demand_seeker'},inplace=True)
 ```
 
-    /home/big-dama/anaconda3/lib/python3.7/site-packages/ipykernel_launcher.py:7: SettingWithCopyWarning: 
-    A value is trying to be set on a copy of a slice from a DataFrame
-    
-    See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-      import sys
-
-
 ## 1.2 Check the "main dataset" room_prices.csv 
 
 
@@ -643,30 +636,6 @@ SVM_reg.fit(ml_dataset_transformed_price_train, labels_price_train)
 print('SVM 10CV mean MSE : ' + str(SVMscores.mean()))
 ```
 
-    /home/big-dama/anaconda3/lib/python3.7/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
-      "avoid this warning.", FutureWarning)
-    /home/big-dama/anaconda3/lib/python3.7/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
-      "avoid this warning.", FutureWarning)
-    /home/big-dama/anaconda3/lib/python3.7/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
-      "avoid this warning.", FutureWarning)
-    /home/big-dama/anaconda3/lib/python3.7/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
-      "avoid this warning.", FutureWarning)
-    /home/big-dama/anaconda3/lib/python3.7/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
-      "avoid this warning.", FutureWarning)
-    /home/big-dama/anaconda3/lib/python3.7/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
-      "avoid this warning.", FutureWarning)
-    /home/big-dama/anaconda3/lib/python3.7/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
-      "avoid this warning.", FutureWarning)
-    /home/big-dama/anaconda3/lib/python3.7/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
-      "avoid this warning.", FutureWarning)
-    /home/big-dama/anaconda3/lib/python3.7/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
-      "avoid this warning.", FutureWarning)
-    /home/big-dama/anaconda3/lib/python3.7/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
-      "avoid this warning.", FutureWarning)
-    /home/big-dama/anaconda3/lib/python3.7/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
-      "avoid this warning.", FutureWarning)
-
-
     SVM 10CV mean MSE : -18208031.682454735
 
 
@@ -682,81 +651,6 @@ XGBOOST_reg.fit(ml_dataset_transformed_price_train, labels_price_train)
 print('XGBOOST_REG 10CV mean MSE : ' + str(XGBOOSTscores.mean()))
 ```
 
-    /home/big-dama/anaconda3/lib/python3.7/site-packages/xgboost/core.py:587: FutureWarning: Series.base is deprecated and will be removed in a future version
-      if getattr(data, 'base', None) is not None and \
-
-
-    [23:07:51] WARNING: /workspace/src/objective/regression_obj.cu:152: reg:linear is now deprecated in favor of reg:squarederror.
-
-
-    /home/big-dama/anaconda3/lib/python3.7/site-packages/xgboost/core.py:587: FutureWarning: Series.base is deprecated and will be removed in a future version
-      if getattr(data, 'base', None) is not None and \
-
-
-    [23:07:57] WARNING: /workspace/src/objective/regression_obj.cu:152: reg:linear is now deprecated in favor of reg:squarederror.
-
-
-    /home/big-dama/anaconda3/lib/python3.7/site-packages/xgboost/core.py:587: FutureWarning: Series.base is deprecated and will be removed in a future version
-      if getattr(data, 'base', None) is not None and \
-
-
-    [23:08:03] WARNING: /workspace/src/objective/regression_obj.cu:152: reg:linear is now deprecated in favor of reg:squarederror.
-
-
-    /home/big-dama/anaconda3/lib/python3.7/site-packages/xgboost/core.py:587: FutureWarning: Series.base is deprecated and will be removed in a future version
-      if getattr(data, 'base', None) is not None and \
-
-
-    [23:08:08] WARNING: /workspace/src/objective/regression_obj.cu:152: reg:linear is now deprecated in favor of reg:squarederror.
-
-
-    /home/big-dama/anaconda3/lib/python3.7/site-packages/xgboost/core.py:587: FutureWarning: Series.base is deprecated and will be removed in a future version
-      if getattr(data, 'base', None) is not None and \
-
-
-    [23:08:13] WARNING: /workspace/src/objective/regression_obj.cu:152: reg:linear is now deprecated in favor of reg:squarederror.
-
-
-    /home/big-dama/anaconda3/lib/python3.7/site-packages/xgboost/core.py:587: FutureWarning: Series.base is deprecated and will be removed in a future version
-      if getattr(data, 'base', None) is not None and \
-
-
-    [23:08:19] WARNING: /workspace/src/objective/regression_obj.cu:152: reg:linear is now deprecated in favor of reg:squarederror.
-
-
-    /home/big-dama/anaconda3/lib/python3.7/site-packages/xgboost/core.py:587: FutureWarning: Series.base is deprecated and will be removed in a future version
-      if getattr(data, 'base', None) is not None and \
-
-
-    [23:08:25] WARNING: /workspace/src/objective/regression_obj.cu:152: reg:linear is now deprecated in favor of reg:squarederror.
-
-
-    /home/big-dama/anaconda3/lib/python3.7/site-packages/xgboost/core.py:587: FutureWarning: Series.base is deprecated and will be removed in a future version
-      if getattr(data, 'base', None) is not None and \
-
-
-    [23:08:30] WARNING: /workspace/src/objective/regression_obj.cu:152: reg:linear is now deprecated in favor of reg:squarederror.
-
-
-    /home/big-dama/anaconda3/lib/python3.7/site-packages/xgboost/core.py:587: FutureWarning: Series.base is deprecated and will be removed in a future version
-      if getattr(data, 'base', None) is not None and \
-
-
-    [23:08:36] WARNING: /workspace/src/objective/regression_obj.cu:152: reg:linear is now deprecated in favor of reg:squarederror.
-
-
-    /home/big-dama/anaconda3/lib/python3.7/site-packages/xgboost/core.py:587: FutureWarning: Series.base is deprecated and will be removed in a future version
-      if getattr(data, 'base', None) is not None and \
-
-
-    [23:08:41] WARNING: /workspace/src/objective/regression_obj.cu:152: reg:linear is now deprecated in favor of reg:squarederror.
-
-
-    /home/big-dama/anaconda3/lib/python3.7/site-packages/xgboost/core.py:587: FutureWarning: Series.base is deprecated and will be removed in a future version
-      if getattr(data, 'base', None) is not None and \
-
-
-    [23:08:47] WARNING: /workspace/src/objective/regression_obj.cu:152: reg:linear is now deprecated in favor of reg:squarederror.
     XGBOOST_REG 10CV mean MSE : -25043342.72023646
 
 
@@ -805,12 +699,6 @@ print('XGBOOST classification report :\n' + str(classification_report(labels_pri
 print('XGBOOST confusion matrix :\n' + str(confusion_matrix(labels_priceCL_test, XGBOOST_predicted)))
 ```
 
-    /home/big-dama/anaconda3/lib/python3.7/site-packages/sklearn/model_selection/_split.py:657: Warning: The least populated class in y has only 1 members, which is too few. The minimum number of members in any class cannot be less than n_splits=10.
-      % (min_groups, self.n_splits)), Warning)
-    /home/big-dama/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
-      'precision', 'predicted', average, warn_for)
-
-
     XGBOOST 10CV f1_weighted scores : [0.21235471 0.22145132 0.21689349 0.18709734 0.20508251 0.19684988
      0.20690774 0.20952655 0.20322095 0.20786011]
     XGBOOST classification report :
@@ -842,11 +730,6 @@ print('XGBOOST confusion matrix :\n' + str(confusion_matrix(labels_priceCL_test,
      [ 20   0  21   9  21   0  51 155  16  72]
      [  8   0  10  10   8   0  21  90  21  79]
      [ 10   0   6   3   5   0  14  66  12 191]]
-
-
-    /home/big-dama/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
-      'precision', 'predicted', average, warn_for)
-
 
 
 ```python
