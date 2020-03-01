@@ -124,23 +124,7 @@ requests_grp_pd.rename(columns={'lister': 'demand_lister', 'seeker': 'demand_see
 room_prices_pd[room_prices_pd.duplicated(subset=['room_id'],keep=False)]
 ```
 
-
-
-
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -181,23 +165,7 @@ room_prices_pd[room_prices_pd.duplicated(subset=['room_id'],keep=False)]
 rooms_pd[rooms_pd['id']=='f3c58cdacf15']
 ```
 
-
-
-
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -227,12 +195,6 @@ rooms_pd[rooms_pd['id']=='f3c58cdacf15']
 room_prices_pd['currency'].iloc[86424] = 'GBP'
 room_prices_pd.drop(index=118849,inplace=True)
 ```
-
-    /home/big-dama/anaconda3/lib/python3.7/site-packages/pandas/core/indexing.py:190: SettingWithCopyWarning: 
-    A value is trying to be set on a copy of a slice from a DataFrame
-    
-    See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-      self._setitem_with_indexer(indexer, value)
 
 
 ## 1.3 Check the location of the rooms
