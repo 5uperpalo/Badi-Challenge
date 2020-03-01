@@ -243,22 +243,6 @@ rooms_pd['city_id'][rooms_pd['country_id']=='United Kingdom'] = 2
 rooms_pd.rename(columns={'created_at': 'created_at(rooms_csv)','id': 'room_id'},inplace=True)
 ```
 
-    /home/big-dama/anaconda3/lib/python3.7/site-packages/ipykernel_launcher.py:3: SettingWithCopyWarning: 
-    A value is trying to be set on a copy of a slice from a DataFrame
-    
-    See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-      This is separate from the ipykernel package so we can avoid doing imports until
-    /home/big-dama/anaconda3/lib/python3.7/site-packages/ipykernel_launcher.py:4: SettingWithCopyWarning: 
-    A value is trying to be set on a copy of a slice from a DataFrame
-    
-    See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-      after removing the cwd from sys.path.
-    /home/big-dama/anaconda3/lib/python3.7/site-packages/ipykernel_launcher.py:5: SettingWithCopyWarning: 
-    A value is trying to be set on a copy of a slice from a DataFrame
-    
-    See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-      """
-
 
 ### 1.3.2 Assign Neighborhood and Neighborhood group to each room
 
@@ -340,13 +324,6 @@ print('Number of rooms in rooms_prices.csv :'+str(len(room_prices_pd))+
     Number of rooms in rooms.csv : 78692
     Number of rooms in room_amenities.csv : 234044
     Number of rows in dataset : 206989
-
-
-    /home/big-dama/anaconda3/lib/python3.7/site-packages/pandas/core/frame.py:4042: SettingWithCopyWarning: 
-    A value is trying to be set on a copy of a slice from a DataFrame
-    
-    See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-      method=method)
 
 
 ### 1.4.1 Find out currency exchange rate to EUR from all currencies
